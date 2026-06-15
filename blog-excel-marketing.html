@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Using Excel to Optimise Your Marketing Campaigns Like a Pro — Kashif Ali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700;9..40,800&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0F1F3D;--blue:#3B82F6;--blue2:#60A5FA;--light:#EFF6FF;--bg:#F8FAFF;--white:#FFFFFF;--text:#1E293B;--sub:#64748B;--border:#E2E8F0;--radius:14px;--trans:all 0.3s ease;}
+body.dark{--bg:#0B1628;--white:#0F1D35;--text:#CBD5E1;--sub:#7A8FA8;--border:#1E3454;--light:#0D2040;}
+body.dark nav{background:rgba(11,22,40,0.95);border-bottom-color:var(--border);}
+body.dark .article-body h2,body.dark .article-body h3{color:#E2E8F0;}
+body.dark .tip-box{background:rgba(59,130,246,0.1);border-color:rgba(59,130,246,0.3);}
+body.dark blockquote{background:var(--white);border-left-color:var(--blue);}
+body.dark .author-card,body.dark .related-card{background:var(--white);border-color:var(--border);}
+body.dark .tag{background:var(--light);color:var(--blue2);}
+body.dark .code-box{background:#0D1F35;border-color:#1E3454;color:#93C5FD;}
+body.dark .metric-card{background:var(--white);border-color:var(--border);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;transition:background 0.4s,color 0.4s;}
+::-webkit-scrollbar{width:5px;}::-webkit-scrollbar-track{background:var(--navy);}::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px;}
+nav{position:sticky;top:0;z-index:100;padding:0 5%;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;height:60px;}
+.nav-back{display:flex;align-items:center;gap:0.5rem;text-decoration:none;color:var(--sub);font-size:0.87rem;font-weight:500;transition:var(--trans);}
+.nav-back:hover{color:var(--blue);}
+.nav-logo{font-family:'DM Sans',sans-serif;font-weight:800;font-size:1.1rem;color:var(--navy);}
+.nav-logo span{color:var(--blue);}
+.theme-btn{background:var(--light);border:1px solid var(--border);color:var(--sub);width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:0.95rem;display:flex;align-items:center;justify-content:center;transition:var(--trans);}
+.blog-hero{background:linear-gradient(135deg,#1E1B4B 0%,#312E81 100%);padding:70px 5% 60px;text-align:center;position:relative;overflow:hidden;}
+.blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 70% at 80% 30%,rgba(99,102,241,0.3) 0%,transparent 60%);}
+.hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+.cat-badge{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.9);padding:0.3rem 0.85rem;border-radius:99px;font-size:0.78rem;font-weight:600;letter-spacing:0.5px;margin-bottom:1.4rem;}
+.blog-hero h1{font-family:'DM Sans',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#fff;line-height:1.2;letter-spacing:-1px;margin-bottom:1.2rem;}
+.blog-meta-row{display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;}
+.meta-item{font-size:0.83rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:0.4rem;}
+.meta-item strong{color:rgba(255,255,255,0.85);}
+.article-wrap{max-width:760px;margin:0 auto;padding:60px 5%;}
+.article-body{font-family:'Merriweather',serif;font-size:1.05rem;line-height:1.9;color:var(--text);}
+.article-body p{margin-bottom:1.6rem;}
+.article-body h2{font-family:'DM Sans',sans-serif;font-size:1.6rem;font-weight:800;color:var(--navy);letter-spacing:-0.5px;margin:3rem 0 1rem;padding-bottom:0.5rem;border-bottom:2px solid var(--light);}
+.article-body h3{font-family:'DM Sans',sans-serif;font-size:1.15rem;font-weight:700;color:var(--navy);margin:2rem 0 0.8rem;}
+.article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.6rem;}
+.article-body li{margin-bottom:0.6rem;font-size:1rem;}
+.article-body strong{font-weight:700;}
+.article-body a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(59,130,246,0.3);}
+blockquote{background:var(--light);border-left:4px solid var(--blue);border-radius:0 12px 12px 0;padding:1.4rem 1.6rem;margin:2rem 0;font-family:'DM Sans',sans-serif;font-size:1.1rem;font-weight:600;color:var(--navy);line-height:1.5;}
+blockquote span{display:block;font-size:0.82rem;color:var(--sub);font-weight:400;margin-top:0.5rem;}
+.tip-box{background:var(--light);border:1px solid rgba(59,130,246,0.2);border-radius:12px;padding:1.3rem 1.5rem;margin:2rem 0;font-family:'DM Sans',sans-serif;}
+.tip-box .tip-label{font-size:0.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:0.5rem;}
+.tip-box p{font-size:0.93rem;color:var(--sub);margin-bottom:0;line-height:1.7;font-family:'DM Sans',sans-serif;}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;margin-right:0.6rem;flex-shrink:0;vertical-align:middle;}
+/* Code box */
+.code-box{background:#0F1F3D;border:1px solid rgba(59,130,246,0.3);border-radius:10px;padding:1.2rem 1.5rem;margin:1.5rem 0;font-family:'Courier New',monospace;font-size:0.88rem;color:#93C5FD;line-height:1.6;overflow-x:auto;}
+.code-box .comment{color:rgba(255,255,255,0.3);}
+/* Metrics cards */
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;}
+.metric-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center;}
+.metric-abbr{font-family:'DM Sans',sans-serif;font-size:1.4rem;font-weight:800;color:var(--navy);margin-bottom:0.2rem;}
+.metric-name{font-size:0.78rem;font-weight:600;color:var(--blue);margin-bottom:0.3rem;}
+.metric-desc{font-size:0.76rem;color:var(--sub);}
+/* Steps list */
+.steps-list{list-style:none;padding:0;margin:1.5rem 0;display:flex;flex-direction:column;gap:0.8rem;}
+.steps-list li{display:flex;gap:1rem;align-items:flex-start;font-family:'DM Sans',sans-serif;font-size:0.93rem;color:var(--sub);}
+.steps-list .sn{background:var(--navy);color:#fff;border-radius:6px;min-width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.82rem;flex-shrink:0;margin-top:1px;}
+.steps-list strong{color:var(--text);}
+.tags-row{display:flex;gap:0.5rem;flex-wrap:wrap;margin:2.5rem 0;}
+.tag{background:var(--light);color:var(--blue);font-size:0.78rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:99px;}
+.divider{height:1px;background:var(--border);margin:2.5rem 0;}
+.author-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:1.8rem;display:flex;align-items:center;gap:1.5rem;margin:3rem 0;box-shadow:0 2px 12px rgba(15,31,61,0.06);}
+.author-avatar{width:60px;height:60px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+.author-name{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);}
+.author-bio{font-size:0.85rem;color:var(--sub);line-height:1.6;}
+.author-links{display:flex;gap:0.6rem;margin-top:0.6rem;}
+.author-link{font-size:0.78rem;color:var(--blue);font-weight:500;text-decoration:none;padding:0.2rem 0.6rem;border:1px solid rgba(59,130,246,0.3);border-radius:6px;transition:var(--trans);}
+.author-link:hover{background:var(--light);}
+.related-section h3{font-family:'DM Sans',sans-serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:1.2rem;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:3rem;}
+.related-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-decoration:none;transition:var(--trans);display:flex;flex-direction:column;gap:0.4rem;}
+.related-card:hover{border-color:var(--blue);transform:translateY(-2px);}
+.related-cat{font-size:0.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);}
+.related-title{font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:700;color:var(--navy);line-height:1.35;}
+.related-read{font-size:0.78rem;color:var(--sub);}
+.back-btn{display:inline-flex;align-items:center;gap:0.5rem;background:var(--navy);color:#fff;padding:0.75rem 1.5rem;border-radius:10px;text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.9rem;transition:var(--trans);margin-bottom:3rem;}
+.back-btn:hover{background:var(--blue);transform:translateY(-2px);}
+@media(max-width:600px){.related-grid,.metrics-grid{grid-template-columns:1fr;}.article-wrap{padding:40px 5%;}.author-card{flex-direction:column;text-align:center;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-back">← Back to Portfolio</a>
+  <div class="nav-logo">Kashif<span>.</span></div>
+  <button class="theme-btn" id="themeBtn">🌙</button>
+</nav>
+
+<div class="blog-hero">
+  <div class="hero-inner">
+    <div class="cat-badge">📊 Data & Analytics</div>
+    <h1>Using Excel to Optimise Your Marketing Campaigns Like a Pro</h1>
+    <div class="blog-meta-row">
+      <span class="meta-item">✍️ <strong>Kashif Ali</strong></span>
+      <span class="meta-item">📅 <strong>September 2024</strong></span>
+      <span class="meta-item">⏱ <strong>6 min read</strong></span>
+    </div>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>Marketers love talking about expensive analytics platforms and AI-powered dashboards. But after years of managing campaigns for both a US-based brand and an Amazon e-commerce operation, I keep coming back to the same tool that most people already have on their laptop: <strong>Microsoft Excel.</strong></p>
+
+    <p>Used properly, Excel is one of the most powerful marketing analysis tools available — and it's almost universally ignored beyond basic spreadsheet use. In this article, I'll show you the five Excel techniques I use to analyse campaign performance, spot opportunities, and make data-driven decisions that actually move the needle.</p>
+
+    <blockquote>
+      "Excel's flexibility and functionality allow you to track every aspect of your digital marketing campaign — from social media metrics and SEO performance to ad spend and ROI."
+      <span>— A tool most marketers massively underuse</span>
+    </blockquote>
+
+    <h2>Why Excel Still Wins in 2025</h2>
+
+    <p>Before diving into the techniques, let's address the obvious question: why Excel when you have Google Analytics, Meta Ads Manager, and Amazon's reporting dashboard? The answer is that none of these platforms talk to each other. Excel is the one place where you can <strong>combine data from every source</strong> into a single view and do analysis that no single platform can do alone.</p>
+
+    <p>Every reporting platform gives you its own siloed view of performance. Excel lets you see the complete picture — spend, reach, conversions, revenue, and ROI — all in one place, compared across channels, across time periods, the way you want to see it.</p>
+
+    <h2>Tip 1: Pivot Tables — Turn Raw Data into Instant Insights</h2>
+
+    <p><span class="step-num">1</span> If you're not using pivot tables for campaign analysis, you're doing 10x more work than necessary. A pivot table can transform thousands of rows of raw ad data into a clear, interactive performance summary in under 60 seconds.</p>
+
+    <p>Here's how I use pivot tables for campaign reporting:</p>
+
+    <ol class="steps-list">
+      <li><div class="sn">1</div><div>Export your campaign data from Meta Ads Manager, Google Ads, or Amazon into a single Excel sheet — one row per ad set or campaign</div></li>
+      <li><div class="sn">2</div><div>Click <strong>Insert → PivotTable</strong> and select your data range</div></li>
+      <li><div class="sn">3</div><div>Drag <strong>Campaign Name</strong> to Rows, and <strong>Spend, Impressions, Clicks, Conversions</strong> to Values</div></li>
+      <li><div class="sn">4</div><div>Add a calculated field for <strong>CTR = Clicks/Impressions</strong> and <strong>ROAS = Revenue/Spend</strong></div></li>
+      <li><div class="sn">5</div><div>Sort by ROAS descending — immediately see your best and worst performing campaigns</div></li>
+    </ol>
+
+    <div class="tip-box">
+      <div class="tip-label">💡 Key Insight</div>
+      <p>Always create CTR, CPC, CVR, and ROAS as calculated fields inside the pivot table — never import pre-calculated metrics from ad platforms. This ensures accuracy when your filters change and the numbers automatically recalculate.</p>
+    </div>
+
+    <h2>Tip 2: VLOOKUP and INDEX-MATCH — Connect Data Across Sheets</h2>
+
+    <p><span class="step-num">2</span> One of the most common problems marketers face is data living in different places: sales data in one sheet, ad spend in another, website traffic in a third. VLOOKUP (and the more powerful INDEX-MATCH combination) lets you pull data from one sheet into another using a common identifier — like a campaign name, product SKU, or date.</p>
+
+    <p>A real use case from my work: I had Amazon sales data in one sheet and PPC spend data in another. I needed to calculate true ROAS per ASIN. Using INDEX-MATCH, I could pull the exact revenue figure for each ASIN from the sales sheet into my spend sheet without copying and pasting a single cell.</p>
+
+    <div class="code-box">
+<span class="comment">/* INDEX-MATCH: More powerful than VLOOKUP */</span>
+=INDEX(SalesSheet!C:C, MATCH(A2, SalesSheet!A:A, 0))
+
+<span class="comment">/* VLOOKUP: Simpler but column-position dependent */</span>
+=VLOOKUP(A2, SalesSheet!A:D, 3, FALSE)
+
+<span class="comment">/* Calculate ROAS in the same row */</span>
+=INDEX(Revenue!B:B,MATCH(A2,Revenue!A:A,0)) / B2
+    </div>
+
+    <p>The INDEX-MATCH combination is preferred over VLOOKUP for two reasons: it works when your lookup column is not the leftmost column, and it doesn't break when you insert or delete columns in your source data.</p>
+
+    <h2>Tip 3: Track the Metrics That Actually Matter</h2>
+
+    <p><span class="step-num">3</span> Most marketers track too many metrics and make decisions based on the wrong ones. Here are the core metrics I track for every campaign type, and why each one matters:</p>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-abbr">CTR</div>
+        <div class="metric-name">Click-Through Rate</div>
+        <div class="metric-desc">Measures ad/content relevance and creative effectiveness</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-abbr">CVR</div>
+        <div class="metric-name">Conversion Rate</div>
+        <div class="metric-desc">Measures landing page & offer quality after the click</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-abbr">ROAS</div>
+        <div class="metric-name">Return on Ad Spend</div>
+        <div class="metric-desc">Revenue generated per unit of ad spend — the bottom line</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-abbr">CPA</div>
+        <div class="metric-name">Cost Per Acquisition</div>
+        <div class="metric-desc">How much it costs to acquire one customer or conversion</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-abbr">ACOS</div>
+        <div class="metric-name">Ad Cost of Sales</div>
+        <div class="metric-desc">Amazon-specific: ad spend as % of attributed sales revenue</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-abbr">LTV</div>
+        <div class="metric-name">Lifetime Value</div>
+        <div class="metric-desc">Total expected revenue from a customer over their relationship</div>
+      </div>
+    </div>
+
+    <h2>Tip 4: Build a Campaign Dashboard with Conditional Formatting</h2>
+
+    <p><span class="step-num">4</span> Raw numbers are hard to read at a glance. Conditional formatting turns your spreadsheet into a visual dashboard that lets you instantly spot problems and opportunities without reading every cell.</p>
+
+    <p>My standard campaign dashboard setup:</p>
+    <ul>
+      <li><strong>Green-Yellow-Red scale on ROAS</strong> — green for high performers, red for campaigns bleeding budget</li>
+      <li><strong>Data bars on Spend</strong> — visualise budget distribution across campaigns at a glance</li>
+      <li><strong>Icon sets on CTR</strong> — up/down arrows immediately show which creatives are trending</li>
+      <li><strong>Highlight duplicate values</strong> — catch data errors before they influence decisions</li>
+    </ul>
+
+    <div class="tip-box">
+      <div class="tip-label">🎨 Setup in 30 Seconds</div>
+      <p>Select your ROAS column → Home → Conditional Formatting → Color Scales → Choose Green-Yellow-Red. Instantly, your highest ROAS values turn green and lowest turn red. Apply to CTR and Conversion Rate columns for a complete visual dashboard with no additional tools needed.</p>
+    </div>
+
+    <h2>Tip 5: Automate Repetitive Reports with Macros</h2>
+
+    <p><span class="step-num">5</span> If you find yourself doing the same Excel tasks every week — importing data, formatting a report, copying totals to a summary sheet — you should be running a macro instead of doing it manually.</p>
+
+    <p>A macro is simply a recorded sequence of Excel actions that can be replayed with one click. I use macros to automate our weekly performance reporting process:</p>
+
+    <ol>
+      <li><strong>Record the macro</strong> — Developer tab → Record Macro, then perform your usual formatting and calculation steps</li>
+      <li><strong>Assign to a button</strong> — Add a button to your sheet and assign the macro to it</li>
+      <li><strong>One-click reports</strong> — Every week, paste in new raw data, click the button, and your formatted report is ready in seconds</li>
+    </ol>
+
+    <p>What used to take me 45 minutes of manual formatting every week now takes about 3 minutes. That's time that goes back into actual analysis and campaign optimisation.</p>
+
+    <blockquote>
+      The goal isn't to be good at Excel — it's to spend less time on Excel so you can spend more time on strategy. Automation is how you get there.
+    </blockquote>
+
+    <h2>Putting It All Together: A Weekly Marketing Analysis Workflow</h2>
+
+    <p>Here is the exact weekly workflow I follow using Excel to manage marketing performance:</p>
+
+    <ol class="steps-list">
+      <li><div class="sn">1</div><div><strong>Monday:</strong> Export data from all ad platforms (Meta, Google, Amazon) and paste into the master Excel sheet</div></li>
+      <li><div class="sn">2</div><div><strong>Monday:</strong> Run the formatting macro — all conditional formatting and calculated fields update automatically</div></li>
+      <li><div class="sn">3</div><div><strong>Monday:</strong> Refresh pivot tables — immediately see which campaigns are performing above and below target</div></li>
+      <li><div class="sn">4</div><div><strong>Tuesday:</strong> Identify top 3 opportunities (scale winners) and top 3 problems (pause or fix underperformers)</div></li>
+      <li><div class="sn">5</div><div><strong>Wednesday:</strong> Implement changes in ad platforms based on Excel analysis</div></li>
+      <li><div class="sn">6</div><div><strong>Friday:</strong> Quick mid-week check on key metrics — anything that needs urgent attention before the weekend</div></li>
+    </ol>
+
+    <p>This system keeps me consistently informed without spending hours in spreadsheets. The key is having a well-structured master sheet that updates quickly with new data, so the analysis time is minimal and the decision-making time is maximised.</p>
+
+    <h2>Conclusion: Data is Only Valuable When You Act on It</h2>
+
+    <p>Excel is not a substitute for good marketing instincts — it's the tool that validates or challenges those instincts with real data. The marketers who consistently outperform their peers are not the ones using the most expensive tools; they're the ones who look at their numbers honestly and make disciplined decisions based on what the data tells them.</p>
+
+    <p>Start with one technique from this article — even just setting up a pivot table for your current campaigns — and see how quickly it changes the way you think about your marketing performance. Once you see what the data is telling you, you'll never go back to managing campaigns by gut feel alone.</p>
+
+    <p>Have a specific campaign you're trying to optimise, or want help building an Excel reporting system for your marketing? <a href="Kashif_Ali_Portfolio.html#contact">Drop me a message</a> — I genuinely enjoy this stuff.</p>
+
+    <div class="tags-row">
+      <span class="tag">Microsoft Excel</span>
+      <span class="tag">Data Analytics</span>
+      <span class="tag">Campaign Optimisation</span>
+      <span class="tag">Pivot Tables</span>
+      <span class="tag">Digital Marketing</span>
+      <span class="tag">ROAS</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="author-card">
+      <div class="author-avatar">👨‍💼</div>
+      <div>
+        <div class="author-name">Kashif Ali</div>
+        <div class="author-bio">Digital Marketing Executive & E-Commerce Specialist. Advanced Excel user with experience in financial modelling, campaign analytics, and data-driven marketing optimisation across multiple platforms.</div>
+        <div class="author-links">
+          <a href="https://www.linkedin.com/in/kashif-ali-811a29226" target="_blank" class="author-link">LinkedIn</a>
+          <a href="mailto:kshifali011@gmail.com" class="author-link">Email</a>
+          <a href="Kashif_Ali_Portfolio.html" class="author-link">Portfolio</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="related-section">
+      <h3>More Articles by Kashif</h3>
+      <div class="related-grid">
+        <a href="blog-amazon-seo.html" class="related-card">
+          <div class="related-cat">🛒 Amazon SEO</div>
+          <div class="related-title">5 Amazon SEO Strategies That Doubled My Product Rankings</div>
+          <div class="related-read">8 min read · November 2024</div>
+        </a>
+        <a href="blog-content-calendar.html" class="related-card">
+          <div class="related-cat">📅 Content Marketing</div>
+          <div class="related-title">How to Build a Content Calendar That Drives Real Engagement</div>
+          <div class="related-read">7 min read · October 2024</div>
+        </a>
+      </div>
+    </div>
+
+    <a href="Kashif_Ali_Portfolio.html" class="back-btn">← Back to Portfolio</a>
+  </div>
+</div>
+
+<script>
+const btn=document.getElementById('themeBtn');
+const saved=localStorage.getItem('theme');
+if(saved==='dark'){document.body.classList.add('dark');btn.textContent='☀️';}
+btn.addEventListener('click',()=>{document.body.classList.toggle('dark');const d=document.body.classList.contains('dark');btn.textContent=d?'☀️':'🌙';localStorage.setItem('theme',d?'dark':'light');});
+</script>
+</body>
+</html>
