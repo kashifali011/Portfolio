@@ -389,6 +389,19 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);}
     <h2 class="section-title reveal">Skills & Expertise</h2>
     <p class="section-sub reveal">A dual skill set spanning creative marketing and technical development.</p>
     <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Property &amp; Finance Operations</h3>
+        <div class="skill-list">
+          <span>Security Deposit Processing</span>
+          <span>Refund &amp; Deduction Review</span>
+          <span>Invoice Verification</span>
+          <span>Occupancy Tracking</span>
+          <span>Utility &amp; Expense Calculations</span>
+          <span>Quality Checks &amp; Agent Support</span>
+          <span>Google Sheets &amp; Documentation</span>
+        </div>
+      </div>
+
       <div class="skill-group reveal">
         <div class="skill-group-header"><div class="skill-group-icon">📣</div><div class="skill-group-title">Digital Marketing</div></div>
         <div class="skill-bar-item"><div class="skill-bar-label">Campaign Management <span>95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div></div>
@@ -431,6 +444,24 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);}
     <p class="section-label reveal">Work History</p>
     <h2 class="section-title reveal">Professional Experience</h2>
     <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-date">22 June 2026 – Present</span>
+          <h3>Deposit Operations &amp; Agent Training Support</h3>
+          <h4>RoomHousing <span>· Remote · Property Management</span></h4>
+          <ul>
+            <li>Manage security-deposit workflows by reviewing client checkout information, locating client records, and generating deposit-liquidation templates.</li>
+            <li>Verify check-in and check-out dates and occupancy records to support accurate period-based deposit and utility calculations.</li>
+            <li>Review and register utility and supplier invoices, including electricity, water, gas, Wi-Fi, hosting, and other expenses.</li>
+            <li>Use actual invoices where available and previous complete-month averages when bills are unavailable and process instructions require them.</li>
+            <li>Review refund calculations, deductions, transfer amounts, and supporting PDFs; investigate discrepancies and flag incorrect or duplicate charges.</li>
+            <li>Maintain Google Sheets, client files, deposit records, occupancy data, and expense documentation.</li>
+            <li>Quality-check templates and calculations, identify errors, and communicate corrections and pending issues to the team.</li>
+            <li>Train and support agents in RoadMap procedures, deposit workflows, real-invoice processing, utility averages, templates, and client-file creation.</li>
+          </ul>
+        </div>
+      </article>
+
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="exp-card">
@@ -616,7 +647,7 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);}
   <div class="contact-inner">
     <p class="section-label">Get In Touch</p>
     <h2 class="section-title">Let's work together.</h2>
-    <p class="section-sub">Open to remote digital marketing roles, e-commerce projects, and freelance opportunities.</p>
+    <p class="section-sub">Open to remote opportunities in deposit and property operations, finance support, digital marketing, e-commerce, and technology.</p>
     <div class="contact-cards">
       <a href="mailto:kshifali011@gmail.com" class="contact-item"><div class="contact-icon">✉️</div><div class="contact-label">Email</div><div class="contact-val">kshifali011@gmail.com</div></a>
       <a href="https://wa.me/923159167218" target="_blank" class="contact-item"><div class="contact-icon">💬</div><div class="contact-label">WhatsApp</div><div class="contact-val">+92-315-916-7218</div></a>
@@ -628,7 +659,7 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);}
 
 <footer>
   <div class="footer-logo">Kashif<span>.</span></div>
-  <p>© 2025 Kashif Ali · Digital Marketing · E-Commerce · MERN Stack</p>
+  <p>© 2026 Kashif Ali · Digital Marketing · E-Commerce · MERN Stack</p>
   <p style="font-size:0.72rem;color:rgba(255,255,255,0.18);">Islamabad, Pakistan</p>
 </footer>
 
@@ -665,7 +696,7 @@ function drawDots(){
 drawDots();
 
 /* ── TYPEWRITER ── */
-const phrases=['Digital Marketing Executive.','E-Commerce Specialist.','Amazon SEO Expert.','MERN Stack Developer.','Data-Driven Strategist.'];
+const phrases=['Deposit Operations Specialist.','Property Operations Support.','Digital Marketing Executive.','E-Commerce Specialist.','Amazon SEO Expert.','MERN Stack Developer.','Data-Driven Strategist.'];
 let pi=0,ci=0,deleting=false;
 const el=document.querySelector('.typed-text');
 function type(){if(!el)return;const phrase=phrases[pi];if(!deleting){el.textContent=phrase.slice(0,ci+1);ci++;if(ci===phrase.length){deleting=true;setTimeout(type,1800);return;}}else{el.textContent=phrase.slice(0,ci-1);ci--;if(ci===0){deleting=false;pi=(pi+1)%phrases.length;setTimeout(type,400);return;}}setTimeout(type,deleting?45:80);}
